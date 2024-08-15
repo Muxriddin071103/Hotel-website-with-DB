@@ -1,0 +1,106 @@
+/* Slider Container */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-touch-callout: none;
+    -ms-touch-action: pan-y;
+}
+
+/* List of Slides */
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Focus Styles */
+.slick-list:focus {
+    outline: none;
+}
+
+/* Dragging Cursor */
+.slick-list.dragging {
+    cursor: pointer; /* Modern cursor style */
+}
+
+/* Track and Transform */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0); /* For smoother animations */
+}
+
+/* Track Styles */
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+/* Clear Floats */
+.slick-track:before,
+.slick-track:after {
+    content: '';
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+/* Loading State */
+.slick-loading .slick-track {
+    visibility: hidden; /* Hide track during loading */
+}
+
+/* Slide Styles */
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right; /* Support for RTL languages */
+}
+
+/* Slide Images */
+.slick-slide img {
+    display: block; /* Ensure images are visible */
+}
+
+/* Loading and Dragging States */
+.slick-slide.slick-loading img {
+    display: none; /* Hide images during loading */
+}
+
+.slick-slide.dragging img {
+    pointer-events: none; /* Prevent interaction during drag */
+}
+
+/* Initialized Slides */
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden; /* Hide slides during loading */
+}
+
+/* Vertical Sliders */
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; /* Adds a border for vertical sliders */
+}
+
+/* Navigation Arrows */
+.slick-arrow.slick-hidden {
+    display: none; /* Hide arrows when not needed */
+}

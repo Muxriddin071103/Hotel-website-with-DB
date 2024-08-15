@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/admin-pages/addRoom.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/admin-pages/editRoom.jsp" value="file://$PROJECT_DIR$/src/main/webapp/admin-pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/admin-pages/manage-bookings.jsp" value="file://$PROJECT_DIR$/src/main/webapp/admin-pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/admin-pages/manage-rooms.jsp" value="file://$PROJECT_DIR$/src/main/webapp/admin-pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/admin-pages/manage-users.jsp" value="file://$PROJECT_DIR$/src/main/webapp/admin-pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/booking.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/explore.html" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/main-page.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/user-pages/booking.jsp" value="file://$PROJECT_DIR$/src/main/webapp/user-pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/user-pages/contact.jsp" value="file://$PROJECT_DIR$/src/main/webapp/user-pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/user-pages/main-page.jsp" value="file://$PROJECT_DIR$/src/main/webapp/user-pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/user-pages/rooms.jsp" value="file://$PROJECT_DIR$/src/main/webapp/user-pages" />
+      </map>
+    </option>
+  </component>
+</project>
