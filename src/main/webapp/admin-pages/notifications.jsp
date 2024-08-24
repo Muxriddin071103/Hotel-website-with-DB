@@ -1,6 +1,7 @@
 <%@ page import="org.example.repositories.NotificationRepository" %>
 <%@ page import="java.util.List" %>
 <%@ page import="org.example.entity.Notifications" %>
+<%@ page import="org.example.entity.User" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <!DOCTYPE html>
@@ -121,7 +122,13 @@
                 <li class="tm-list"><a href="manage-bookings.jsp">Manage Bookings</a></li>
                 <li class="tm-list"><a href="notifications.jsp">Notifications</a></li>
                 <li class="tm-list dropdown">
-                    <a href="#" class="dropdown-toggle" id="cabinetButton">Cabinet</a>
+                    <a href="#" class="dropdown-toggle" id="cabinetButton">
+                        <%
+                            User user = (User) session.getAttribute("user");
+                            String displayName = (user != null && user.getName() != null) ? user.getName() : "Cabinet";
+                        %>
+                        <%= displayName %>
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a href="cabinet.jsp">See Information</a></li>
                         <li><a href="http://localhost:8080">Log Out</a></li>

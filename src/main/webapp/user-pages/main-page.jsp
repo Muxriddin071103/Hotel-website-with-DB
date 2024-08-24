@@ -2,6 +2,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="org.example.entity.Notifications" %>
 <%@ page import="java.time.format.DateTimeFormatter" %>
+<%@ page import="org.example.entity.User" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -121,9 +122,10 @@
         .tm-list.dropdown:hover .dropdown-menu {
             display: block;
         }
+
     </style>
     <meta charset="utf-8">
-    <title>Magestic Hotel</title>
+    <title>Majestic Hotel</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="../dist/slick.js"></script>
     <script type="text/javascript" src="../dist/jquery.scrollUp.js"></script>
@@ -157,7 +159,13 @@
                 <li class="tm-list"><a href="rooms.jsp">Rooms</a></li>
                 <li class="tm-list"><a href="booking.jsp">Booking</a></li>
                 <li class="tm-list dropdown">
-                    <a href="#" class="dropdown-toggle" id="cabinetButton">Cabinet</a>
+                    <a href="#" class="dropdown-toggle" id="cabinetButton">
+                        <%
+                            User user = (User) session.getAttribute("user");
+                            String displayName = (user != null && user.getName() != null) ? user.getName() : "Cabinet";
+                        %>
+                        <%= displayName %>
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a href="cabinet.jsp">See Information</a></li>
                         <li><a href="http://localhost:8080">Log Out</a></li>
